@@ -1,0 +1,59 @@
+    .hub {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hub-card {
+        display: block;
+        text-decoration: none;
+        background: #fffdf8;
+        border: 1px solid var(--accent-gold);
+        outline: 1px solid var(--border-subtle);
+        outline-offset: -8px;
+        border-radius: 2px;
+        padding: 2.2rem;
+        box-shadow: 0 6px 18px rgba(44, 34, 30, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hub-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgba(44, 34, 30, 0.14);
+    }
+
+    .hub-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: var(--accent-gold);
+    }
+
+    .hub-card h2 {
+        font-family: 'Cinzel', serif;
+        font-size: 1.7rem;
+        color: var(--text-sepia);
+        margin: 0.4rem 0 0.8rem;
+    }
+
+    .hub-card p {
+        font-family: 'Lora', serif;
+        color: #4A3B32;
+        margin-bottom: 1.2rem;
+    }
+
+    .quote-widget {
+        background: var(--text-sepia);
+        color: var(--bg-parchment);
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-style: italic;
+    }
+
+    .quote-widget span {
+        display: block;
+        margin-top: 0.6rem;
+        color: var(--accent-gold)
+        ; font-style: normal;
+    }
