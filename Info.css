@@ -318,3 +318,77 @@
 }
 
 .skill p { margin: 0; font-size: 0.95rem; }
+
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-box {
+    position: relative;
+    background: #fffdf8;
+    border: 1px solid #c9a05a;
+    border-left: 5px solid #c9a05a;
+    padding: 25px 30px;
+    min-height: 160px;
+    box-shadow: 0 6px 18px rgba(44, 34, 30, 0.08);
+}
+
+.skill-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-box h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #2c2420;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #eee5d5;
+    border: 1px solid #c9a05a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 20px;
+    background: repeating-linear-gradient(
+        135deg,
+        #c9a05a 0px,
+        #c9a05a 8px,
+        #e5c98f 8px,
+        #e5c98f 16px
+    );
+}
+
+.html-progress {
+    width: 48%;
+}
+
+.css-progress {
+    width: 44%;
+}
+
+.js-progress {
+    width: 9%;
+}
+
+.skill-box span {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c9a05a;
+}
