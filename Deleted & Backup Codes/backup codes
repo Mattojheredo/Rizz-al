@@ -1,0 +1,104 @@
+    <aside class="sidebar">
+    <div class="widget">
+        <h3>Education Timeline</h3>
+        <p class="timeline-ni-rizz-al"></p>
+        <div class="timeline-year" id="t-year">Home Education (1864–1870)</div>
+        <p class="timeline-desc" id="t-desc">First learned the alphabet, prayers, and basic reading from his mother, Teodora Alonso.</p>
+    <input type="range" min="1" max="6" value="1" class="timeline-slider" id="timelineSlider">
+    </div>
+        </aside>
+        
+
+
+        <!-- MAIN CONTAINERS -->
+
+        <h1 class="major">Major Literary Works</h1>
+    <div class="main-cont">
+    <main class="blog-posts">
+    <article class="post-card post-card-image">
+        <img src="/Images/Noli_Me_Tangere.jpg" alt="Noli Me Tángere cover" class="post-thumb">
+        <div class="post-body">
+            <div class="post-meta">Noli Me Tángere</div>
+            <h2 class="post-title"><a href="https://en.wikipedia.org/wiki/Noli_Me_T%C3%A1ngere_(novel)">Rizal Exposes the Friars in a Novel</a></h2>
+            <p class="post-excerpt">Rizal’s first novel, published in 1887. It follows Crisóstomo Ibarra, who returns from Europe and runs into the abuses of the Spanish friars and colonial officials.</p>
+            <a href="https://en.wikipedia.org/wiki/Noli_Me_T%C3%A1ngere_(novel)" class="read-more">Read Full Article →</a>
+        </div>
+    </article>
+
+    <article class="post-card post-card-image">
+        <img src="/Images/El_Filibusterismo_facsimilie_cover.jpg" alt="El Filibusterismo cover" class="post-thumb">
+        <div class="post-body">
+        <div class="post-meta">El Filibusterismo</div>
+            <h2 class="post-title"><a href="https://en.wikipedia.org/wiki/El_Filibusterismo">The Sequel Where Things Get Darker</a></h2>
+            <p class="post-excerpt">The 1891 sequel. Ibarra returns in disguise as the jeweler Simoun, and the story turns from reform to revenge.</p>
+            <a href="https://en.wikipedia.org/wiki/El_Filibusterismo" class="read-more">Read Full Article →</a>
+        </div>
+    </article>
+
+    <article class="post-card post-card-image">
+        <img src="/Images/Mi Último Adiós.jpg" alt="Mi Último Adiós" class="post-thumb">
+        <div class="post-body">
+        <div class="post-meta">Mi Último Adiós</div>
+            <h2 class="post-title"><a href="https://en.wikipedia.org/wiki/Mi_Último_Adiós">The Farewell Poem Rizal Left Behind</a></h2>
+            <p class="post-excerpt">The poem Rizal wrote the night before his execution on December 30, 1896. It’s his farewell to the country he loved.</p>
+            <a href="https://en.wikipedia.org/wiki/Mi_Último_Adiós" class="read-more">Read Full Article →</a>
+        </div>
+    </article>
+</main>
+</div>
+
+
+
+    <script>
+    const timelineData = {
+        1: { year: "Home Education (1864–1870)", desc: "First learned the alphabet, prayers, and basic reading from his mother, Teodora Alonso." },
+        2: { year: "Biñan Schooling (1870–1871)", desc: "Received his first formal elementary education in Spanish, Latin, and math under Maestro Justiniano Aquino Cruz." },
+        3: { year: "Ateneo Municipal (1872–1877)", desc: " Completed his secondary education, graduating with a Bachelor of Arts degree with highest honors (sobresaliente)" },
+        4: { year: "University of Santo Tomas (1877–1882)", desc: "Pursued higher education in Philosophy and Letters before shifting to Medicine (Ophthalmology)" },
+        5: { year: "Universidad Central de Madrid (1882–1885)", desc: " Traveled to Spain and completed twin degrees: a Licentiate in Medicine and a Licentiate in Philosophy and Letters." },
+        6: { year: "European Specialization (1885–1887)", desc: " Completed advanced post-graduate clinical training in ophthalmology at clinics in Paris, France and Heidelberg, Germany." },
+        };
+
+    const slider = document.getElementById('timelineSlider');
+    const yearEl = document.getElementById('t-year');
+    const descEl = document.getElementById('t-desc');
+
+    slider.addEventListener('input', (e) => {
+    const val = e.target.value;
+
+        yearEl.textContent = timelineData[val].year;
+        descEl.textContent = timelineData[val].desc;
+    });
+</script>
+
+
+
+:root {
+        --bg-parchment: #F9F6F0;
+        --text-sepia: #2C221E;
+        --accent-gold: #C5A059;
+        --accent-blue: #1D3354;
+        --card-bg: #FFFFFF;
+        --border-subtle: #E6DFD5;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: var(--bg-parchment);
+        color: var(--text-sepia);
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        border-bottom: 2px solid var(--accent-gold);
+        background-color: var(--bg-parchment);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
