@@ -1,0 +1,137 @@
+    .explore {
+    max-width: 1100px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+    }
+
+    .explore-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    }
+
+    .card-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    }
+
+    .mini-card {
+    padding: 1.25rem;
+    }
+
+    .mini-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    }
+
+    .mini-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    }
+
+    .mini-title a {
+    text-decoration: none;
+    color: var(--text-sepia);
+    }
+
+    @media (max-width: 900px) {
+    .card-row { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 500px) {
+    .card-row { grid-template-columns: 1fr; }
+    }
+
+            /* ---------- 4 CARDS IN ONE ROW ---------- */
+        .explore {
+            max-width: 1100px;
+            margin: 0 auto 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .explore-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-row {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 260px;
+            gap: 2rem;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            scroll-snap-type: x mandatory;
+        }
+        .mini-card {
+            scroll-snap-align: start;
+        }
+
+        .mini-card {
+            padding: 1.25rem;
+        }
+
+        .mini-thumb {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            background: var(--border-subtle);
+        }
+
+        .mini-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.05rem;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        .mini-title a {
+            text-decoration: none;
+            color: var(--text-sepia);
+        }
+
+        .mini-title a:hover {
+            color: var(--accent-blue);
+        }
+
+        .mini-card .post-source {
+            margin-bottom: 0;
+        }
+
+<div class="trio-trio-tro">
+        <h3>His 10 Siblings</h3>
+        <ul class="three">
+            <li><a href="">Saturnina Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Paciano Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Narcisa Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Olympia Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Lucia Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Maria Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Concepcion Rizal </a></li>
+            <li><a href="" class="more-works-rizz-al">Josefa Alonzo Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Trinidad Rizal</a></li>
+            <li><a href="" class="more-works-rizz-al">Soledad Rizal</a></li>
+        </ul>
+        </div>
+
+    <div class="trio-trio-tro">
+        <h3>More Works</h3>
+        <ul class="three">
+    <!---lalagyan ng links sa <a>, wag kalimutan ha!! (palitan ang # ng totoong link)-->
+            <li><a href="https://en.wikipedia.org/wiki/Makamisa" class="more-works-rizz-al">📜 Makamisa</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Sobre_la_indolencia_de_los_filipinos" class="more-works-rizz-al">✍️ Sobre la Indolencia de los Filipinos</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Filipinas_dentro_de_cien_a%C3%B1os" class="more-works-rizz-al">🔮 Filipinas Dentro de Cien Años</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Mga_Kababayang_Dalaga_ng_Malolos" class="more-works-rizz-al">💌 Sa mga Kababayang Dalaga sa Malolos</a></li>
+        </ul>
+        </div>
+    </aside>
+</div>
